@@ -1,0 +1,11 @@
+[build]
+  # Uygulama alt klasörde bulunuyor
+  base = "garanti-temizlik"
+  command = "npm ci --include=dev && npm run build"
+  publish = "dist"
+
+# React Router (BrowserRouter) için: tüm yolları index.html'e yönlendir
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

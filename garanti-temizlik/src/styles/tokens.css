@@ -1,0 +1,73 @@
+/* ============================================================
+   GARANTİ TEMİZLİK — TASARIM TOKENLARI
+   Renk paleti, yüklenen Coolors görselinden birebir alınmıştır:
+   #000022 · #001242 · #0094C6 · #005E7C
+   Açık tonlar bu paletin tintleridir; palet dışına çıkılmaz.
+   ============================================================ */
+
+:root {
+  /* --- Palet (Coolors) --- */
+  --ink: #000022;        /* en koyu zemin, metin */
+  --navy: #001242;       /* koyu bölümler, header */
+  --blue: #0094c6;       /* birincil aksiyon rengi */
+  --teal: #005e7c;       /* ikincil vurgu, gradyan eşi */
+
+  /* --- Palet türevleri (tint/shade) --- */
+  --blue-dark: #00719a;
+  --blue-light: #15bdf2;
+  --blue-100: #d3eefa;
+  --blue-50: #eaf6fb;
+  --tint: #f3f9fc;         /* açık bölüm zemini */
+  --surface: #ffffff;
+  --line: #d8e7f0;         /* kenarlıklar */
+  --text: #0a1733;         /* ana metin (navy'ye yakın) */
+  --text-muted: #45536f;   /* ikincil metin */
+  --text-on-dark: #eaf3f9;
+  --text-on-dark-muted: #a7bed2;
+
+  /* --- WhatsApp (platform rengi, dönüşüm için tanınırlık şart) --- */
+  --wa: #25d366;
+  --wa-dark: #1faf55;
+
+  /* --- Tipografi --- */
+  --font-display: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+
+  --fs-hero: clamp(2.1rem, 1.3rem + 3.6vw, 3.6rem);
+  --fs-h1: clamp(1.9rem, 1.3rem + 2.6vw, 3rem);
+  --fs-h2: clamp(1.5rem, 1.15rem + 1.6vw, 2.15rem);
+  --fs-h3: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  --fs-body: 1rem;        /* 16px taban */
+  --fs-small: 0.875rem;
+
+  --lh-tight: 1.15;
+  --lh-body: 1.65;
+
+  /* --- Boşluk & yapı --- */
+  --container: 72rem;      /* 1152px */
+  --container-narrow: 50rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --section-y: clamp(3.25rem, 8vw, 6rem);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* --- Gölgeler (navy tabanlı, gri değil) --- */
+  --shadow-sm: 0 2px 10px rgba(0, 18, 66, 0.08);
+  --shadow-md: 0 10px 30px rgba(0, 18, 66, 0.12);
+  --shadow-lg: 0 24px 60px rgba(0, 18, 66, 0.18);
+  --shadow-blue: 0 12px 30px rgba(0, 148, 198, 0.35);
+  --shadow-wa: 0 12px 30px rgba(37, 211, 102, 0.32);
+
+  /* --- Hareket --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-med: 320ms;
+  --dur-slow: 650ms;
+
+  /* --- Katmanlar --- */
+  --z-header: 50;
+  --z-mobile-bar: 60;
+}

@@ -1,0 +1,401 @@
+/* ============================================================
+   SAYFALAR — iç sayfa kahramanları, hizmet detayı, iletişim, 404
+   ============================================================ */
+
+/* ---------- İç sayfa hero ---------- */
+
+.page-hero {
+  background:
+    radial-gradient(44rem 22rem at 100% -20%, rgba(0, 148, 198, 0.2), transparent 60%),
+    linear-gradient(160deg, var(--navy), var(--ink));
+  color: var(--text-on-dark);
+  padding-block: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.page-hero .section-header {
+  margin-bottom: 0;
+}
+
+.page-hero .section-lead {
+  color: var(--text-on-dark-muted);
+}
+
+.page-hero h1 {
+  color: #fff;
+}
+
+.contact-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 480px) {
+  .contact-hero-ctas .btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* ---------- Breadcrumbs ---------- */
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: var(--fs-small);
+  margin-bottom: 1.1rem;
+  color: var(--text-on-dark-muted);
+}
+
+.breadcrumbs a {
+  color: var(--text-on-dark-muted);
+  font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+  color: var(--blue-light);
+}
+
+.breadcrumbs span[aria-current] {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ---------- Hizmet detayı ---------- */
+
+.service-hero-grid {
+  display: grid;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+@media (min-width: 980px) {
+  .service-hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+  }
+}
+
+.service-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .service-hero-ctas .btn {
+    flex: 1 1 100%;
+  }
+}
+
+.service-hero-media .service-visual {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-detail-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 980px) {
+  .service-detail-grid {
+    grid-template-columns: 1.4fr 0.8fr;
+  }
+}
+
+.scope-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.scope-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 0.95rem 1.15rem;
+  font-weight: 600;
+}
+
+.scope-list svg {
+  color: var(--blue);
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.service-side-card {
+  position: sticky;
+  top: 90px;
+  background: linear-gradient(160deg, var(--navy), var(--ink));
+  color: var(--text-on-dark);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: grid;
+  gap: 0.9rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.service-side-card h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.service-side-card p {
+  color: var(--text-on-dark-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service-side-card .btn {
+  width: 100%;
+}
+
+.service-side-note {
+  font-size: var(--fs-small);
+  border-top: 1px solid rgba(234, 246, 251, 0.12);
+  padding-top: 0.9rem;
+}
+
+.related-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 900px) {
+  .related-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.related-card {
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.related-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.related-title svg {
+  color: var(--blue);
+}
+
+/* ---------- Hakkımızda ---------- */
+
+.about-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-card {
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.9rem;
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    translate var(--dur-slow) var(--ease-out),
+    transform var(--dur-med) var(--ease-out),
+    box-shadow var(--dur-med) var(--ease-out);
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.45em;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.about-quote-wrap {
+  text-align: center;
+}
+
+.about-quote p {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1rem + 1.4vw, 1.75rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.45;
+  margin-bottom: 0.9em;
+}
+
+.about-quote span {
+  color: var(--blue-light);
+  font-weight: 700;
+}
+
+/* ---------- İletişim ---------- */
+
+.contact-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 980px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-info-card {
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-card h2,
+.contact-form-col h2 {
+  font-size: 1.4rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.contact-ico {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border-radius: 13px;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  color: #fff;
+  box-shadow: var(--shadow-blue);
+}
+
+.contact-list strong {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.contact-list a {
+  font-weight: 700;
+}
+
+.contact-list p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.contact-map iframe,
+.home-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form-lead {
+  color: var(--text-muted);
+}
+
+/* ---------- Ana sayfa iletişim bölümü ---------- */
+
+.home-contact-grid {
+  display: grid;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+@media (min-width: 980px) {
+  .home-contact-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.home-contact-card {
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.home-map iframe {
+  height: 100%;
+  min-height: 300px;
+}
+
+/* ---------- 404 ---------- */
+
+.notfound {
+  text-align: center;
+}
+
+.notfound-code {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(4rem, 12vw, 7rem);
+  line-height: 1;
+  color: var(--blue-100);
+  margin-bottom: 0.1em;
+}
+
+.notfound p {
+  color: var(--text-muted);
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}

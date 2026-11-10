@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: "SIZIN-DOMAINInIZ" ifadelerini gerçek alan adınızla değiştirin -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler</loc><priority>0.9</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/hali-yikama</loc><priority>0.9</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/koltuk-yikama</loc><priority>0.9</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/arac-koltugu-yikama</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/yatak-yikama</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/battaniye-yorgan-yikama</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/zebra-stor-perde-yikama</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/kombi-petek-temizligi</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/klima-temizligi</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hizmetler/ev-temizligi</loc><priority>0.8</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/hakkimizda</loc><priority>0.6</priority></url>
+  <url><loc>https://www.SIZIN-DOMAINInIZ.com/iletisim</loc><priority>0.8</priority></url>
+</urlset>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Alan adini kendi domaininizle degistirin
+Sitemap: https://www.SIZIN-DOMAINInIZ.com/sitemap.xml
